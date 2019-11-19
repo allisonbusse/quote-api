@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Quote.css';
 
 const Quote = ({ quote, character, image }) => {
 
   return (
-    <div>
+    <div className={styles.Quote}>
       <img src={image} alt={character} />
+      <h3>{character}:</h3>
       <p>{quote}</p>
-      <p>Said by: {character}</p>
     </div>
   );
 };

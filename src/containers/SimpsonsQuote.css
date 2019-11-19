@@ -1,0 +1,18 @@
+.SimpsonsQuote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  button {
+    background-color: #F5D334;
+    color: white;
+    width: 200px;
+    padding: 8px;
+    text-transform: uppercase;
+    height: 60px;
+    font-size: 16px;
+  }
+}

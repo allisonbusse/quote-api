@@ -4,6 +4,7 @@ import { getLoading, getQuote } from '../selectors/simpsonsSelectors';
 import { setQuotePromise } from '../actions/simpsonsActions';
 import Quote from '../components/Quote';
 import Load from '../components/Load';
+import styles from './SimpsonsQuote.css';
 
 const SimpsonsQuote = () => {
   const quote = useSelector(state => getQuote(state));
@@ -19,12 +20,12 @@ const SimpsonsQuote = () => {
 
 
   return (
-    <>
+    <div className={styles.SimpsonsQuote}>
       <Quote quote={quote.quote}
         character={quote.character}
         image={quote.image} />
       <Load newQuote={loadAnotherQuote} />
-    </>
+    </div>
 
   );
 };

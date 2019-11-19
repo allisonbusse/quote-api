@@ -1,9 +1,14 @@
 import React from 'react';
 import SimpsonsQuote from '../containers/SimpsonsQuote';
+import Header from './Header';
+import styles from './App.css';
 
 const App = () => {
   return (
-    <SimpsonsQuote />
+    <div className={styles.App}>
+      <Header />
+      <SimpsonsQuote />
+    </div>
   );
 };
 
